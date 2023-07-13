@@ -1,15 +1,15 @@
 #Makefile
-all: add-nob
+all: add-nbo
 
-add-nob: add-nob.o main.o
-	g++ -o add-nob add-nob.o main.o
+add-nob: add-nbo.o main.o
+	g++ -o add-nbo add-nbo.o main.o
 
-main.o: add-nob.h main.cpp
+main.o: add-nbo.h main.cpp
 	g++ -c -o main.o main.cpp
 
-add-nob.o: add-nob.h add-nob.cpp
-	g++ -c -o add-nob.o add-nob.cpp
+add-nob.o: add-nbo.h add-nbo.cpp
+	g++ -c -o add-nbo.o add-nbo.cpp
 clean: 
-	rm -f add-nob
+	rm -f add-nbo
 	rm -f *.o
 
