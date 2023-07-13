@@ -7,7 +7,7 @@
 int main(int argc, char** argv){
 	if(argc != 3){
 		printf("usage: %s <file1> <file2>\n", argv[0]);
-		printf("sample : add-nbo a.bin b.bin");
+		printf("sample : add-nbo a.bin b.bin\n");
 		return 0;
 	}
 	uint32_t num1 = read_file(argv[1]);
